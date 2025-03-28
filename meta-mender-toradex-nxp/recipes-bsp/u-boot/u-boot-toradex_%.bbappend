@@ -17,9 +17,7 @@ SRC_URI:append:mender-uboot = " \
     file://0001-configs-toradex-board-specific-mender-integration.patch \
     file://0001-Use-mender_dtb_name-for-fdtfile.patch \
 "
-SRC_URI:append:mender-uboot:colibri-imx6ull = " \
-    ${@bb.utils.contains("IMAGE_FEATURES", "read-only-rootfs", "file://0002-use-read-only-rootfs.patch", "",d)}"
 
 # Use the Toradex specific version of this patch
-SRC_URI:remove:mender-uboot = " file://0003-Integration-of-Mender-boot-code-into-U-Boot.patch "
+SRC_URI:remove:mender-uboot = " file://0002-Integration-of-Mender-boot-code-into-U-Boot.patch "
 SRC_URI:append:mender-uboot = " file://0001-Integration-of-Mender-boot-code-into-toradex-U-Boot.patch "
