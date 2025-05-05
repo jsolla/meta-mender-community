@@ -1,7 +1,7 @@
 Index: 1.0/boot.cmd.in
 ===================================================================
---- 1.0.orig/boot.cmd.in
-+++ 1.0/boot.cmd.in
+--- boot.cmd.in.old
++++ boot.cmd.in
 @@ -2,34 +2,9 @@
  #
  # Copyright 2020 Toradex
